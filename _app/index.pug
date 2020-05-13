@@ -1,0 +1,43 @@
+-var path = ''
+-var head_url = 'https://marketer.mastervision.su/';
+-var head_title = '«Профессия Интернет-маркетолог»';
+-var head_description = 'Превратитесь в востребованного специалиста – начните карьеру в интернете уже сегодня!';
+-var head_img = 'img/banner.jpg';
+-var styles = path+'css/styles.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/scripts.min.js'
+-var action = ''
+-var group = ''
+-var formId = ''
+-var formVc = ''
+//- -var footer_title = true
+//- -var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/main/1.main.pug
+		include pug/main/2.about.pug
+		include pug/main/3.benefits.pug
+		include pug/main/4.teach.pug
+		include pug/main/5.for.pug
+		include pug/main/6.plan.pug
+		include pug/main/7.andrey.pug
+		include pug/main/8.yulya.pug
+		include pug/main/9.revs.pug
+		include pug/main/10.last.pug
+		include pug/base/0.footer.pug
+		include pug/main/11.modal.pug
+		include pug/base/0.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
