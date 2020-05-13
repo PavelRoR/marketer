@@ -1,0 +1,62 @@
+section#revs
+	.container
+		.row
+			.col-md-6.col-sm-6
+				+gt('','Видео-отзывы о работе Андрея')
+				#video-revs-1.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							.video-wrapper.video-wrapper-revs(data-youtube="KosIzIq3BvQ" data-img=path+"img/revs/video-1.jpg")
+								img(src=path+"img/revs/video-1.jpg", alt="Видео отзыв 1")
+						each n, index in {2:'pq3XRfdcgDk',3:'8C7Sorg3Ntg',4:'bfKexz0GbjU',5:'3kCVR6x4H4A',6:'6ePGOONwjLg',7:'pIiqe97FeXw',8:'HZwqi8S0uGQ'}
+							.item
+								.video-wrapper.video-wrapper-revs(data-youtube=n data-img="img/revs/video-"+index+".jpg")
+									img(src="img/revs/video-"+index+".jpg", alt="Видео отзыв " + index)
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#revs-slider" data-slide-to="0")
+						each n in [1,2,3,4,5,6,7]
+							li( data-target="#video-revs-1" data-slide-to=n)
+					.controls.text-controls
+						a( class="left carousel-control" href="#video-revs-1" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#video-revs-1" role="button" data-slide="next")
+			.col-md-6.col-sm-6
+				+gt('','Видео-отзыв о работе Юлии')
+				.video-wrapper.video-wrapper-revs(data-youtube="BmeJCTtjHOA" data-img=path+"img/revs/video-9.jpg")
+					img(src=path+"img/revs/video-9.jpg", alt="Видео отзыв 9")
+		.row
+			.col-md-6.col-sm-6
+				+gt('','Отзывы о работе Андрея')
+				#text-revs-1.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							a( href=path+"img/revs/text-1.png" data-fancybox="text-revs-1")
+								img.text-rev-img( src=path+"img/revs/text-1.png" alt="Отзыв 1")
+						each n in [2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+							.item
+								a( href=path+"img/revs/text-"+n+".png" data-fancybox="text-revs-1")
+									img.text-rev-img( src=path+"img/revs/text-"+n+".png" alt="Отзыв "+n)
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#text-revs-1" data-slide-to="0")
+						each n in [2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+							li( data-target="#text-revs-1" data-slide-to=n)
+					.controls.text-controls
+						a( class="left carousel-control" href="#text-revs-1" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#text-revs-1" role="button" data-slide="next")
+			.col-md-6.col-sm-6
+				+gt('','Отзывы о работе Юлии')
+				#text-revs-2.carousel.slide(data-ride="carousel" data-interval="false")
+					.carousel-inner(role="listbox")
+						.item.active
+							a( href=path+"img/revs/text-16.jpg" data-fancybox="text-revs-2")
+								img.text-rev-img( src=path+"img/revs/text-16.jpg" alt="Отзыв 16")
+						each n in [17,18,19,20,21]
+							.item
+								a( href=path+"img/revs/text-"+n+".jpg" data-fancybox="text-revs-2")
+									img.text-rev-img( src=path+"img/revs/text-"+n+".jpg" alt="Отзыв "+n)
+					ol.carousel-indicators.revs-indicators
+						li.active( data-target="#text-revs-2" data-slide-to="0")
+						each n in [17,18,19,20,21]
+							li( data-target="#text-revs-2" data-slide-to=n)
+					.controls.text-controls
+						a( class="left carousel-control" href="#text-revs-2" role="button" data-slide="prev")
+						a( class="right carousel-control" href="#text-revs-2" role="button" data-slide="next")

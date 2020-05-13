@@ -1,9 +1,0 @@
-@font-face {
-    font-family: 'AgrandirGrandHeavy';
-    src: url('fonts/AgrandirGrandHeavy.eot');
-    src: url('fonts/AgrandirGrandHeavy.eot') format('embedded-opentype'),
-         url('fonts/AgrandirGrandHeavy.woff2') format('woff2'),
-         url('fonts/AgrandirGrandHeavy.woff') format('woff'),
-         url('fonts/AgrandirGrandHeavy.ttf') format('truetype'),
-         url('fonts/AgrandirGrandHeavy.svg#AgrandirGrandHeavy') format('svg');
-}
