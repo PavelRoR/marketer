@@ -1,6 +1,91 @@
-.tab-content > .tab-pane {
-	display: none;
-}
-.tab-content > .active {
+#plan
+	padding 0 0 100px
+	position relative
+	&:before
+		content ''
+		display block
+		position absolute
+		z-index 0
+		width 3000px
+		height 500px
+		background-color: rgba(0,85,249,0.17)
+		transform: rotate(4deg)
+		top: 50px
+		left -200px
+	&:after
+		content ''
+		display block
+		position absolute
+		width 300px
+		height 300px
+		transform: rotate(45deg)
+		background-color #fff
+		background-color: rgba(0, 85, 249, 0.17);
+		top 200px
+		right -80px
+	.container
+		position relative
+		z-index 10
+		&:before
+			content ''
+			display block
+			position absolute
+			width 100px
+			height 100px
+			transform: rotate(45deg)
+			background-color #fff
+			background-color: #689CFF;
+			top 220px
+			right -80px
+.tab-content > .tab-pane
+	display: none
+.tab-content > .active
 	display: block;
-}
+.days-links
+	display flex
+	align-items: center
+	justify-content: space-between
+	margin-bottom: 30px
+	li
+		font-size: 96px
+		font-family: AG
+		font-weight: 800
+		list-style: none
+		a 
+			color rgba(0, 85, 249, 0.4);
+		&.active
+			a
+				color #0055F9;
+.day-list
+	li
+		margin-bottom: 20px
+		color #0055F9;
+		font-weight: bold
+		font-size: 20px
+		span
+			color #000
+			font-weight: normal
+		&:last-child
+			margin-bottom: 0
+.day-sublist
+	li
+		position relative
+		padding-left: 15px
+		list-style: none
+		color #000
+		font-weight: normal
+		&:before
+			content ''
+			display block
+			position absolute
+			top 15px
+			left 0
+			height 1px
+			width 10px
+			background-color: #0055F9;
+.day-bonus
+	text-align center
+	margin-top: 40px
+	font-size: 22px
+	span
+		color #0055F9;

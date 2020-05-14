@@ -1,0 +1,47 @@
+#teach
+	// background: linear-gradient(2deg,#fff 10%,rgba(0,85,249,0.17) 0,rgba(0,85,249,0.17) 90%,#fff 0)
+	// background-repeat no-repeat
+	// overflow hidden
+	padding 100px 0 50px
+	position relative
+	&:before
+		content ''
+		display block
+		position absolute
+		z-index 0
+		width 3000px
+		height 800px
+		background-color: rgba(0,85,249,0.17)
+		transform: rotate(4deg)
+		top: 150px
+		left -200px
+	&:after
+		content: ''
+		display block
+		position absolute
+		width 200px
+		height 200px
+		transform: rotate(45deg)
+		background-color #fff
+		background-color: rgba(0, 85, 249, 0.17);
+		top 50px
+		right -80px
+	.container
+		position relative
+		z-index 10
+.teach-item
+	margin-bottom: 50px
+	overflow hidden
+	display table
+	width 100%
+	&-title
+		font-size: 60px
+		font-family: AG
+		font-weight: 800
+		padding-right: 30px
+		color  #0055F9;
+		display table-cell
+		vertical-align: middle
+	&-text
+		display table-cell
+		vertical-align: middle

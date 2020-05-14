@@ -17,12 +17,13 @@ section#revs
 						each n in [1,2,3,4,5,6,7]
 							li( data-target="#video-revs-1" data-slide-to=n)
 					.controls.text-controls
-						a( class="left carousel-control" href="#video-revs-1" role="button" data-slide="prev")
-						a( class="right carousel-control" href="#video-revs-1" role="button" data-slide="next")
+						a( class="left carousel-control" href="#video-revs-1" role="button" data-slide="prev") &larr;
+						a( class="right carousel-control" href="#video-revs-1" role="button" data-slide="next") &rarr;
 			.col-md-6.col-sm-6
 				+gt('','Видео-отзыв о работе Юлии')
-				.video-wrapper.video-wrapper-revs(data-youtube="BmeJCTtjHOA" data-img=path+"img/revs/video-9.jpg")
-					img(src=path+"img/revs/video-9.jpg", alt="Видео отзыв 9")
+				.carousel-inner
+					.video-wrapper.video-wrapper-revs(data-youtube="BmeJCTtjHOA" data-img=path+"img/revs/video-9.jpg")
+						img(src=path+"img/revs/video-9.jpg", alt="Видео отзыв 9")
 		.row
 			.col-md-6.col-sm-6
 				+gt('','Отзывы о работе Андрея')
@@ -40,8 +41,8 @@ section#revs
 						each n in [2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 							li( data-target="#text-revs-1" data-slide-to=n)
 					.controls.text-controls
-						a( class="left carousel-control" href="#text-revs-1" role="button" data-slide="prev")
-						a( class="right carousel-control" href="#text-revs-1" role="button" data-slide="next")
+						a( class="left carousel-control" href="#text-revs-1" role="button" data-slide="prev") &larr;
+						a( class="right carousel-control" href="#text-revs-1" role="button" data-slide="next") &rarr;
 			.col-md-6.col-sm-6
 				+gt('','Отзывы о работе Юлии')
 				#text-revs-2.carousel.slide(data-ride="carousel" data-interval="false")
@@ -58,5 +59,5 @@ section#revs
 						each n in [17,18,19,20,21]
 							li( data-target="#text-revs-2" data-slide-to=n)
 					.controls.text-controls
-						a( class="left carousel-control" href="#text-revs-2" role="button" data-slide="prev")
-						a( class="right carousel-control" href="#text-revs-2" role="button" data-slide="next")
+						a( class="left carousel-control" href="#text-revs-2" role="button" data-slide="prev") &larr;
+						a( class="right carousel-control" href="#text-revs-2" role="button" data-slide="next") &rarr;

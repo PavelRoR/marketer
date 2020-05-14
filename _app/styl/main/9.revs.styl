@@ -1,0 +1,42 @@
+// #revs
+// 	padding 50px 0 0
+.carousel
+	margin-bottom: 50px
+.carousel-inner
+	border: 2px solid #0055F9;
+.carousel-indicators
+	position: static
+	margin 0 auto
+.carousel-indicators li
+	background-color: rgba(0, 85, 249, 0.4);
+	border-radius: 0
+	transform: rotate(45deg)
+	transition: all .3s ease
+	border: 0
+.carousel-indicators
+	.active
+		background-color: #0055F9;
+.carousel-control
+	background-color: transparent
+	text-shadow: none
+	height 20px
+	top auto
+	bottom: 5px
+	opacity 1
+	color rgba(0, 85, 249, 0.4);
+	display flex
+	align-items: center
+	font-size: 24px
+	&.left
+	&.right
+		background-image: none
+	&.right
+		justify-content: flex-end
+	&:focus
+		color rgba(0, 85, 249, 0.4);
+	&:hover
+		color #0055F9;
+.carousel-inner > .item > a > .text-rev-img
+	height 180px
+	object-fit: contain
+	object-position: center

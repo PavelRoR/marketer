@@ -1,13 +1,13 @@
 .modal#Modal
 	form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-modal
-		h3.form-title Изменись сейчас!
+		h3.form-title.form-title-modal Изменись сейчас!
 		.email-block.email-block-form
 			input( type="hidden" value="1" name="required_fields[email]")
-			input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Email")
+			input(class="input input-mail input-mail-modal" name="Contact[email]" type="text" placeholder="Email")
 		button(type="submit").button.button-form.button-form-modal Записаться
 		.clearfix
 		p.alert-message
-		.checking
+		.checking.checking-modal
 			input(type="checkbox" id="check-2" checked).check
 			label(for="check-2").check-label Я согласен с 
 				a(href="https://mastervision.su/politics.pdf" download target="_blank") условиями обработки

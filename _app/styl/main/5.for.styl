@@ -1,0 +1,67 @@
+#for
+	padding 0 0 100px
+	position relative
+	&:before
+	&:after
+		content ''
+		display block
+		position absolute
+		width 500px
+		height 500px
+		transform: rotate(45deg)
+		background-color #fff
+		background-color: rgba(0, 85, 249, 0.17);
+		top 200px
+		right -80px
+	&:after
+		top auto
+		bottom 0
+		left -180px
+	.container
+		position relative
+		z-index 11
+		&:before
+		&:after
+			content ''
+			display block
+			position absolute
+			width 150px
+			height 150px
+			transform: rotate(45deg)
+			background-color #fff
+			background-color: #689CFF;
+			top 200px
+			left -180px
+		&:after
+			top auto
+			bottom: -250px
+.general-title-for
+	max-width 400px
+.for-item
+	margin-bottom: 40px
+	width 100%
+	max-width 500px
+	display flex
+	padding 0 0 0 50%
+	background-repeat no-repeat
+	background-position: left center
+	background-size: 48%
+	align-items: flex-end
+	justify-content: flex-end
+	height 300px
+	&-1
+		background-image url(../img/images/usefull-1.png)
+		position relative
+	&-2
+		background-image url(../img/images/usefull-2.png)
+	&-3
+		background-image url(../img/images/usefull-3.png)
+	&-4
+		background-image url(../img/images/usefull-4.png)
+	&-5
+		background-image url(../img/images/usefull-5.png)
+	&-6
+		background-image url(../img/images/usefull-6.png)
+	&-text
+		border-top: 3px solid #0055F9;
+		padding-top: 20px

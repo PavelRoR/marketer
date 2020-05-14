@@ -1,0 +1,42 @@
+#andrey
+	position relative
+	&:before
+		content: ''
+		display block
+		position absolute
+		width 400px
+		height 400px
+		transform: rotate(45deg)
+		background-color: rgba(0, 85, 249, 0.4);
+		bottom: 50px
+		left 30px
+.general-title-author
+	font-size: 30px
+.author-list
+	li
+		margin-bottom: 20px
+		padding-left: 20px
+		position relative
+		list-style: none
+		font-size: 20px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content ''
+			display block
+			position absolute
+			top 8px
+			left 0
+			width 10px
+			height 10px
+			transform: rotate(45deg)
+			background-color: #0055F9;
+.andrey-img
+	position relative
+	width 600px
+	height auto
+	top 0
+	right 0
+	display block
+	margin -50px auto 0
+	z-index 60

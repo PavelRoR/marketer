@@ -1,7 +1,9 @@
 section#main
 	.container
 		include ../base/0.header.pug
-		h1.main-title Профессия Интернет-маркетолог
+		h1.main-title Профессия
+			br
+			| Интернет-маркетолог
 		h2.main-subtitle Превратитесь в востребованного специалиста – начните карьеру в интернете уже сегодня!
 		form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
 			h3.form-title Изменись сейчас!
@@ -23,3 +25,5 @@ section#main
 				input(type="hidden" value="0" id="form_newsletter_id_advertising_channel_page_1" name="Contact[id_advertising_channel_page]")
 				input(type="hidden" name="formId" value=formId)
 				input(type="hidden" name="formVc" value=formVc)
+		img(src="img/images/yulya-main.png", alt="Юлия Масюль").main-img.main-img-yulya
+		img(src="img/images/andrey-main.png", alt="Андрей Худояров").main-img.main-img-andrey

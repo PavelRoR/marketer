@@ -1,13 +1,13 @@
 section#andrey
 	.container
-		+gt('general-title-author','Андрей Худояров')
 		.row
 			.col-md-6.col-sm-6.col-md-push-6.col-sm-push-6
 				.andrey-img
-					img(src=path+"img/images/andrey.png", alt="Андрей Худояров")
+					img(src=path+"img/images/andrey.png", alt="Андрей Худояров").andrey-img
 				a.author-cert(href=path+"img/certs/cert-1.png" data-fancybox="cert-1")
 					img(src=path+"img/certs/cert-1.png", alt="Сертификат Андрея Худоярова")
 			.col-md-6.col-sm-6.col-md-pull-6.col-sm-pull-6
+				+gt('general-title-author','Андрей Худояров')
 				ul.author-list
 					li Руководитель отдела лидогенерации Академии Master Vision
 					li Опыт работы в интернет-маркетинге – более 7 лет

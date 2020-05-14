@@ -103,7 +103,7 @@ $(document).ready(function () {
         });
     });
     $(function () {
-        $('#video-revs').on('slide.bs.carousel', function () {
+        $('#video-revs-1').on('slide.bs.carousel', function () {
             $('.video-wrapper-revs iframe').each(function () {
                 var l = $(this).parent().attr('data-img');
                 $(this).parent().html('<img src="' + l + '" alt="Видео отзыв">');

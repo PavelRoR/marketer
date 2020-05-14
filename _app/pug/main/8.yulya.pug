@@ -1,13 +1,12 @@
 section#yulya
 	.container
-		+gt('general-title-author','Юлия Масюль')
 		.row
 			.col-md-6.col-sm-6
-				.yulya-img
-					img(src=path+"img/images/yulya.png", alt="Юлия Масюль")
+				img(src=path+"img/images/yulya.png", alt="Юлия Масюль").yulya-img
 				a.author-cert(href=path+"img/certs/cert-2.png" data-fancybox="cert-2")
 					img(src=path+"img/certs/cert-2.png", alt="Сертификат Юлии Масюль")
 			.col-md-6.col-sm-6
+				+gt('general-title-author','Юлия Масюль')
 				ul.author-list
 					li Автор и ведущая обучающего курса по направлению smm и таргетированной рекламы для партнёров Академии Master Vision, а также туристического онлайн-проекта
 					li Опыт работы в интернет-маркетинге – более 7 лет
