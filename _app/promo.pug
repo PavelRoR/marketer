@@ -1,0 +1,42 @@
+-var path = '../'
+-var head_url = 'https://marketer.mastervision.su/promo/';
+-var head_title = 'Подписывайтесь на наш Телеграм канал и получайте много полезного контента!';
+-var styles = path+'css/promo.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var footer_title = true
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/0.header.pug
+				h1.main-title 
+					span Подписывайтесь 
+					| на наш Телеграм-канал и 
+					span получайте 
+					| много полезного контента!
+				.row
+					.col-md-6
+						.video-wrapper.video-wrapper-main
+							iframe(src="https://youtube.com/embed/8QhCmBZ9Bb4?autoplay=1&mute=1&modestbranding=1" allowfullscreen)
+					.col-md-6
+						h2.main-subtitle А также прямо сейчас получайте бонусы - 5 полезных сервисов для ведения социальных сетей и чек-лист для проверки ваших профессиональных навыков
+						p.main-text P.S. у вас будет возможность задать любой вопрос!
+						a.button(href="https://tlgg.ru/joinchat/AAAAAEYkC8WpUS_ltDNXOA" target="_blank") Подписаться
+				.circles
+					.circle.circle-1
+					.circle.circle-2
+					.circle.circle-3
+		include pug/base/0.footer.pug
+		include pug/scripts/body_bottom_scripts
