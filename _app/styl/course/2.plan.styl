@@ -1,0 +1,120 @@
+#about
+	padding 100px 0 
+	position relative
+	background-image url(../img/backs/about.png)
+	background-repeat no-repeat
+	background-position: top center
+	background-size: 100% 100%
+.about
+	text-align center
+	font-size: 20px
+	span
+		font-weight: bold
+		display block
+.circles
+	position relative
+	width 100%
+	max-width 500px
+	margin 40px auto 0
+	display flex
+	align-content: center
+	justify-content: space-between
+.circle
+	width 150px
+	height 150px
+	border-radius: 50%
+	background-color: transparent
+	border 40px solid rgba(0, 85, 249, 0.5);
+#plan
+	// overflow hidden
+	position relative
+	&:before
+		content ''
+		display block
+		position absolute
+		width 483px
+		height 734px
+		background-image url('../img/images/for.png')
+		background-repeat no-repeat
+		background-position: center
+		background-size contain
+		top 400px
+		right 0
+	&:after
+		content ''
+		display block
+		position absolute
+		width 500px
+		height 500px
+		transform: rotate(45deg)
+		background-color #fff
+		background-color: rgba(0, 85, 249, 0.17);
+		top auto
+		top 1200px
+		left -180px
+	.container
+		position relative
+		z-index 11
+		&:before
+			content ''
+			display block
+			position absolute
+			width 150px
+			height 150px
+			transform: rotate(45deg)
+			background-color #fff
+			background-color: #689CFF;
+			top 200px
+			left -180px
+.plan-subtitle
+	font-size: 30px
+	font-family: AG
+	font-weight: 800
+	margin-bottom: 20px
+	color #0055F9
+	&:last-of-type
+		margin-top: 40px
+		span
+			color #000
+			font-size: 20px
+			display block
+.block
+	margin-bottom: 30px
+.block-title
+	font-size: 22px
+	font-family: A
+	font-weight: bold
+.block-description-title
+	font-size: 20px
+	padding 15px 0 10px 10px
+.block-more
+	display inline-block
+	font-size: 16px
+	color #aaa
+	border-bottom: 1px dotted
+	margin-left: 10px
+	cursor pointer
+	font-weight: normal
+	&-active
+		color #0055F9
+.block-description-list
+	display none
+	margin-left: 20px
+	li
+		margin-bottom: 5px
+		padding-left: 13px
+		position relative
+		list-style: none
+		font-size: 16px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content ''
+			display block
+			position absolute
+			top 8px
+			left 0
+			width 6px
+			height 6px
+			transform: rotate(45deg)
+			background-color: #0055F9;

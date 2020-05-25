@@ -16,6 +16,16 @@ $(document).ready(function () {
                 }, 1500)
             });
         });
+        $('.block-more').on('click', function () {
+            if (!$(this).hasClass('block-more-active')) {
+                $(this).addClass('block-more-active')
+                $(this).parent().next().addClass('.block-description-list-active').slideDown(500);
+            }
+            else {
+                $(this).removeClass('block-more-active')
+                $(this).parent().next().removeClass('block-description-list-active').slideUp(500);
+            }
+        });
         $(".more-link").fancybox();
         /* Таймер */
         $(function () {

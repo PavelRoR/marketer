@@ -14,7 +14,7 @@
 
 section#prices
 	.container
-		+gt('','Выбирайте свой пакет участия:')
+		+gt('general-title-center','Выбирайте свой пакет участия:')
 		.packets
 			.row
 				.col-md-6.col-sm-6
@@ -70,7 +70,7 @@ section#prices
 					| На счет зачисляется 
 					span#prepayment-credited 2 000р.
 				+b('',prepLink,'Оплатить 1 000р.','_blank','prepayment-link')
-			.timer.hide
+			.timer
 				h4.timer-title Скидка уменьшится через:
 				.clock
 		<?php endif;?>
