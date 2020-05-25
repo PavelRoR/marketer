@@ -40,44 +40,33 @@ $(document).ready(function () {
 
             var sale1 = {
                 name: $('#sale-1'),
-                saleText: new Array('500р.')
+                saleText: new Array('3 000р.')
             };
             var sale2 = {
                 name: $('#sale-2'),
-                saleText: new Array('1 000р.')
+                saleText: new Array('3 000р.')
             };
-            var sale3 = {
-                name: $('#sale-3'),
-                saleText: new Array('2 000р.')
-            };
+
             var today1 = {
                 name: $('#today-1'),
-                todayText: new Array('7 400р.')
+                todayText: new Array('32 900р.')
             };
             var today2 = {
                 name: $('#today-2'),
-                todayText: new Array('12 900р.')
+                todayText: new Array('52 900р.')
             };
-            var today3 = {
-                name: $('#today-3'),
-                todayText: new Array('21 900р.')
-            };
+
             var link1 = {
                 name: $('#link-1'),
-                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4935&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4936&clean=true&lg=ru')
+                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4964&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4965&clean=true&lg=ru')
             };
             var link2 = {
                 name: $('#link-2'),
-                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4941&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4942&clean=true&lg=ru')
+                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4970&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4971&clean=true&lg=ru')
             };
-            var link3 = {
-                name: $('#link-3'),
-                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4947&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4948&clean=true&lg=ru')
-            };
-
             var prepLink = {
                 name: $('#prepayment-link'),
-                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4953&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4954&clean=true&lg=ru')
+                linkText: new Array('https://shop.mastervision.su/?r=ordering/cart/as1&id=4977&clean=true&lg=ru', 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4978&clean=true&lg=ru')
             };
 
             if (currentDate < dates[0]) {
@@ -91,13 +80,10 @@ $(document).ready(function () {
                         stop: function () {
                             sale1.name.text(sale1.saleText[0]);
                             sale2.name.text(sale2.saleText[0]);
-                            sale3.name.text(sale3.saleText[0]);
                             today1.name.text(today1.todayText[0]);
                             today2.name.text(today2.todayText[0]);
-                            today3.name.text(today3.todayText[0]);
                             link1.name.attr('href', link1.linkText[0]);
                             link2.name.attr('href', link2.linkText[0]);
-                            link3.name.attr('href', link3.linkText[0]);
                             prepLink.name.attr('href', prepLink.linkText[0]);
                         }
                     }
@@ -115,7 +101,6 @@ $(document).ready(function () {
                             $('.cost-full span').addClass('unbroken');
                             link1.name.attr('href', link1.linkText[1]);
                             link2.name.attr('href', link2.linkText[1]);
-                            link3.name.attr('href', link3.linkText[1]);
                             prepLink.name.attr('href', prepLink.linkText[1]);
                         }
                     }

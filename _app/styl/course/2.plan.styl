@@ -80,41 +80,66 @@
 			display block
 .block
 	margin-bottom: 30px
-.block-title
-	font-size: 22px
-	font-family: A
-	font-weight: bold
-.block-description-title
-	font-size: 20px
-	padding 15px 0 10px 10px
-.block-more
-	display inline-block
-	font-size: 16px
-	color #aaa
-	border-bottom: 1px dotted
-	margin-left: 10px
-	cursor pointer
-	font-weight: normal
-	&-active
-		color #0055F9
-.block-description-list
-	display none
-	margin-left: 20px
-	li
-		margin-bottom: 5px
-		padding-left: 13px
-		position relative
-		list-style: none
-		font-size: 16px
-		&:last-child
-			margin-bottom: 0
+	position relative
+	&-1
+	&-2
+	&-3
+	&-4
+	&-5
+	&-6
 		&:before
 			content ''
 			display block
+			width 1px
+			height 100%
 			position absolute
-			top 8px
-			left 0
-			width 6px
-			height 6px
-			transform: rotate(45deg)
-			background-color: #0055F9;
+			top 0
+			right -10px
+			background-color: #d4e2fe
+	&-2
+	&-4
+	&-6
+		&:before
+			right auto
+			left -21px
+
+	&-title
+		font-size: 22px
+		font-family: A
+		font-weight: bold
+	&-description-title
+		font-size: 20px
+		padding 15px 0 10px 10px
+	&-more
+		display inline-block
+		font-size: 16px
+		color #aaa
+		border-bottom: 1px dotted
+		margin-left: 10px
+		cursor pointer
+		font-weight: normal
+		&-active
+			color #0055F9
+	&-description-list
+		display none
+		margin-left: 20px
+		li
+			margin-bottom: 5px
+			padding-left: 13px
+			position relative
+			list-style: none
+			font-size: 16px
+			&:last-child
+				margin-bottom: 0
+			&:before
+				content ''
+				display block
+				position absolute
+				top 8px
+				left 0
+				width 6px
+				height 6px
+				transform: rotate(45deg)
+				background-color: #0055F9;
+.button-plan
+	margin-top: 30px

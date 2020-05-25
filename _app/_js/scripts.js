@@ -12,17 +12,17 @@ $(document).ready(function () {
             switch_text = $('.switch-text'),
             currDate = new Date(),
             startDate = new Array(
-                new Date("May 05 2020 18:30 UTC+3"),
-                new Date("May 06 2020 18:30 UTC+3"),
-                new Date("May 07 2020 18:30 UTC+3")),
+                new Date("May 25 2020 18:30 UTC+3"),
+                new Date("May 26 2020 18:30 UTC+3"),
+                new Date("May 27 2020 18:30 UTC+3")),
             endDate = new Array(
-                new Date("May 05 2020 21:00 UTC+3"),
-                new Date("May 06 2020 21:00 UTC+3"),
-                new Date("May 07 2020 21:00 UTC+3")),
+                new Date("May 25 2020 21:00 UTC+3"),
+                new Date("May 26 2020 21:00 UTC+3"),
+                new Date("May 27 2020 21:00 UTC+3")),
             rooms = new Array(
-                'https://pruffme.com/landing/u8937/tmp1588147140',
-                'https://pruffme.com/landing/u8937/tmp1588147140',
-                'https://pruffme.com/landing/u8937/tmp1588147140');
+                'https://pruffme.com/landing/u8937/tmp1590219881',
+                'https://pruffme.com/landing/u8937/tmp1590219881',
+                'https://pruffme.com/landing/u8937/tmp1590219881');
 
         function roomSwitch() {
             switch_title.html('А Вы записались на БЕСПЛАТНЫЙ ВЕБИНАР?<br>ЖДЕМ ТОЛЬКО ВАС!')

@@ -8,7 +8,8 @@ section#main
 		p.main-info Даты проведения: 
 			span с 25 по 27 мая, в 19:00 (мск)
 		form(action=action+group method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8" ).form.form-main
-			h3.form-title Изменись сейчас!
+			h3.form-title.switch-title Изменись сейчас!
+			p.switch-text.hide
 			.email-block.email-block-form
 				input( type="hidden" value="1" name="required_fields[email]")
 				input(class="input input-mail input-mail-main" name="Contact[email]" type="text" placeholder="Email")

@@ -32,13 +32,19 @@ section#prices
 								li Доступ в закрытый Телеграм-чат для участников курса
 								li Получение сертификата в электронном виде по окончанию курса
 						.packet-footer
-							p.cost.cost-full Стоимость:
-								span=full_1
-							p.cost.cost-sale Скидка:
-								span#sale-1=sale_1
-							p.cost.cost-today Стоимость сегодня:
-								span#today-1=today_1
-							+b('',link_1,'Выбрать','_blank','link-1')
+							<?php if($now < $dates[2]){;?>
+								p.cost.cost-full Стоимость:
+									span=full_1
+								p.cost.cost-sale Скидка:
+									span#sale-1=sale_1
+								p.cost.cost-today Стоимость сегодня:
+									span#today-1=today_1
+								+b('',link_1,'Выбрать','_blank','link-1')
+							<?php } else {;?>
+								p.cost.cost-full Стоимость:
+									span.unvboken=full_1
+								+b('',link_1,'Выбрать','_blank','')
+							<?php } ;?>
 				.col-md-6.col-sm-6
 					.packet.packet-2
 						.packet-head
@@ -54,13 +60,19 @@ section#prices
 								li Доступ в закрытый Телеграм-чат для участников курса
 								li Получение сертификата в электронном виде по окончанию курса
 						.packet-footer
-							p.cost.cost-full Стоимость:
-								span=full_2
-							p.cost.cost-sale Скидка:
-								span#sale-2=sale_2
-							p.cost.cost-today Стоимость сегодня:
-								span#today-2=today_2
-							+b('',link_2,'Выбрать','_blank','link-2')
+							<?php if($now < $dates[2]){;?>
+								p.cost.cost-full Стоимость:
+									span=full_2
+								p.cost.cost-sale Скидка:
+									span#sale-2=sale_2
+								p.cost.cost-today Стоимость сегодня:
+									span#today-2=today_2
+								+b('',link_2,'Выбрать','_blank','link-2')
+							<?php } else {;?>
+								p.cost.cost-full Стоимость:
+									span.unvboken=full_2
+								+b('',link_2,'Выбрать','_blank','')
+							<?php } ;?>
 		<?php if($now < $dates[2]):?>
 			.prepayment
 				h4.prepayment-title Акция!
@@ -70,6 +82,8 @@ section#prices
 					| На счет зачисляется 
 					span#prepayment-credited 2 000р.
 				+b('',prepLink,'Оплатить 1 000р.','_blank','prepayment-link')
+		<?php endif;?>
+		<?php if($now < $dates[1]):?>
 			.timer
 				h4.timer-title Скидка уменьшится через:
 				.clock

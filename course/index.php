@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php require_once('vars.php');?><!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8"/>
@@ -366,8 +366,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="block block-6">
+          <div class="col-md-12 col-sm-12">
+            <div class="block">
               <h5 class="block-title">Бонусный урок «Продажа через чат-бота»<span class="block-more">подробнее</span></h5>
               <ul class="block-description-list">
                 <li>Создание Телеграм-канала,</li>
@@ -376,7 +376,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div><a class="button button-plan" href="#prices">Записаться</a>
       </div>
     </section>
     <section id="lets">
@@ -449,10 +449,11 @@
                     <li>Получение сертификата в электронном виде по окончанию курса</li>
                   </ul>
                 </div>
-                <div class="packet-footer">
+                <div class="packet-footer"><?php if($now < $dates[1]){;?>
                   <p class="cost cost-full">Стоимость:<span>35 900р.</span></p>
-                  <p class="cost cost-sale">Скидка:<span id="sale-1">6 000р.</span></p>
-                  <p class="cost cost-today">Стоимость сегодня:<span id="today-1">29 900р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4963&amp;clean=true&amp;lg=ru" target="_blank" id="link-1">Выбрать</a>
+                  <p class="cost cost-sale">Скидка:<span id="sale-1"><?=$sale1;?></span></p>
+                  <p class="cost cost-today">Стоимость сегодня:<span id="today-1"><?=$today1;?></span></p><a class="button" href="<?=$link1;?>" target="_blank" id="link-1">Выбрать</a><?php } else {;?>
+                  <p class="cost cost-full">Стоимость:<span class="unbroken">35 900р.</span></p><a class="button" href="<?=$link1;?>" target="_blank" id="">Выбрать</a><?php } ;?>
                 </div>
               </div>
             </div>
@@ -470,10 +471,11 @@
                     <li>Получение сертификата в электронном виде по окончанию курса</li>
                   </ul>
                 </div>
-                <div class="packet-footer">
+                <div class="packet-footer"><?php if($now < $dates[1]){;?>
                   <p class="cost cost-full">Стоимость:<span>55 900р.</span></p>
-                  <p class="cost cost-sale">Скидка:<span id="sale-2">6 000р.</span></p>
-                  <p class="cost cost-today">Стоимость сегодня:<span id="today-2">49 900р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4969&amp;clean=true&amp;lg=ru" target="_blank" id="link-2">Выбрать</a>
+                  <p class="cost cost-sale">Скидка:<span id="sale-2"><?=$sale2;?></span></p>
+                  <p class="cost cost-today">Стоимость сегодня:<span id="today-2"><?=$today2;?></span></p><a class="button" href="<?=$link2;?>" target="_blank" id="link-2">Выбрать</a><?php } else {;?>
+                  <p class="cost cost-full">Стоимость:<span class="unbroken">55 900р.</span></p><a class="button" href="<?=$link2;?>" target="_blank" id="">Выбрать</a><?php } ;?>
                 </div>
               </div>
             </div>
@@ -481,8 +483,9 @@
         </div><?php if($now < $dates[2]):?>
         <div class="prepayment">
           <h4 class="prepayment-title">Акция!</h4>
-          <p class="prepayment-text">Платите 1 000р., бонусом получаете <span id="prepayment-bonus">1 000р. </span><br/>На счет зачисляется <span id="prepayment-credited">2 000р.</span></p><a class="button" href="https://shop.mastervision.su/?r=ordering/cart/as1&amp;id=4976&amp;clean=true&amp;lg=ru" target="_blank" id="prepayment-link">Оплатить 1 000р.</a>
-        </div>
+          <p class="prepayment-text">Платите 1 000р., бонусом получаете <span id="prepayment-bonus">1 000р. </span><br/>На счет зачисляется <span id="prepayment-credited">2 000р.</span></p><a class="button" href="<?=$prepLink;?>" target="_blank" id="prepayment-link">Оплатить 1 000р.</a>
+        </div><?php endif;?>
+<?php if($now < $dates[1]):?>
         <div class="timer">
           <h4 class="timer-title">Скидка уменьшится через:</h4>
           <div class="clock"></div>
@@ -678,8 +681,8 @@
           </div>
         </div>
         <p class="recs-text">Записи мастер-класса будут в свободном доступе до 31.05.20</p><?php } else {;?>
-        <h3 class="general-title general-title-black  hide">Записей мастер-класса более нет в свободном доступе</h3>
-        <p class="recs-text hide">Но Вы можете приобрести их за 690р. и радоваться жизни вместе стем, кто уже смотрел</p><a class="button button-rec hide" href="">Купить записи</a><?php };?>
+        <h3 class="general-title general-title-center">Записей мастер-класса более нет в свободном доступе</h3>
+        <p class="recs-text">Но Вы можете приобрести их за 690р. и радоваться жизни вместе стем, кто уже смотрел</p><a class="button button-rec" href="">Купить записи</a><?php };?>
       </div>
     </section>
     <section id="last">
