@@ -1,0 +1,76 @@
+-var full_1 = '35 900р.'
+-var full_2 = '55 900р.'
+
+-var sale_1 = '6 000р.'
+-var sale_2 = '6 000р.'
+
+-var today_1 = '29 900р.'
+-var today_2 = '49 900р.'
+
+-var link_1 ='https://shop.mastervision.su/?r=ordering/cart/as1&id=4963&clean=true&lg=ru'
+-var link_2 ='https://shop.mastervision.su/?r=ordering/cart/as1&id=4969&clean=true&lg=ru'
+
+-prepLink = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4976&clean=true&lg=ru'
+
+section#prices
+	.container
+		+gt('','Выбирайте свой пакет участия:')
+		.packets
+			.row
+				.col-md-6.col-sm-6
+					.packet.packet-1
+						.packet-head
+							.packet-head-title
+								small пакет
+								| Специалист
+						.packet-body
+							ul.packet-body-list
+								li 6 блоков
+									a.more-link(href="#Modal-1") подробнее
+								li Домашние задания с проверкой и обратной связью по каждому блоку
+								li Еженедельные онлайн-встречи с ответами на вопросы
+								li Доступ в закрытый Телеграм-чат для участников курса
+								li Получение сертификата в электронном виде по окончанию курса
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span=full_1
+							p.cost.cost-sale Скидка:
+								span#sale-1=sale_1
+							p.cost.cost-today Стоимость сегодня:
+								span#today-1=today_1
+							+b('',link_1,'Выбрать','_blank','link-1')
+				.col-md-6.col-sm-6
+					.packet.packet-2
+						.packet-head
+							.packet-head-title
+								small пакет
+								| Премиум
+						.packet-body
+							ul.packet-body-list
+								li 12 блоков
+									a.more-link(href="#Modal-2") подробнее
+								li Домашние задания с проверкой и обратной связью по каждому блоку
+								li Еженедельные онлайн-встречи с ответами на вопросы
+								li Доступ в закрытый Телеграм-чат для участников курса
+								li Получение сертификата в электронном виде по окончанию курса
+						.packet-footer
+							p.cost.cost-full Стоимость:
+								span=full_2
+							p.cost.cost-sale Скидка:
+								span#sale-2=sale_2
+							p.cost.cost-today Стоимость сегодня:
+								span#today-2=today_2
+							+b('',link_2,'Выбрать','_blank','link-2')
+		<?php if($now < $dates[2]):?>
+			.prepayment
+				h4.prepayment-title Акция!
+				p.prepayment-text Платите 1 000р., бонусом получаете 
+					span#prepayment-bonus 1 000р. 
+					br
+					| На счет зачисляется 
+					span#prepayment-credited 2 000р.
+				+b('',prepLink,'Оплатить 1 000р.','_blank','prepayment-link')
+			.timer.hide
+				h4.timer-title Скидка уменьшится через:
+				.clock
+		<?php endif;?>

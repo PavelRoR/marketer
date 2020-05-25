@@ -1,0 +1,37 @@
+-var path = '../'
+-var head_url = 'https://marketer.mastervision.su/course/';
+-var head_title = '«Интернет-маркетолог»';
+-var head_description = 'Обучающий курс Юлии Масюль и Андрей Худоярова';
+-var styles = path+'css/course.min.css';
+-var fav_ico = path+'favicon.ico';
+-var fav_png = path+'favicon.png';
+-var scripts = path+'js/course.min.js'
+
+-var footer_title = true
+-var oferta = 'https://mastervision.su/oferta.docx'
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,p,target,id)
+	a.button(class=cl href=href target=target id=id)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		include pug/course/1.main.pug
+		include pug/course/2.plan.pug
+		include pug/course/3.lets.pug
+		include pug/course/4.packets.pug
+		include pug/main/7.andrey.pug
+		include pug/main/8.yulya.pug
+		include pug/main/9.revs.pug
+		include pug/course/5.records.pug
+		include pug/course/6.last.pug
+		include pug/course/7.modals.pug
+		include pug/base/0.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts

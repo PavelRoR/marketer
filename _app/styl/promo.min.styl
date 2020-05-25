@@ -54,6 +54,13 @@
 	border-radius: 50%
 	background-color: transparent
 	border 40px solid rgba(0, 85, 249, 0.5);
+.tg-black
+	display none
+.button-promo:hover
+	.tg-white
+		display none
+	.tg-black
+		display inline
 
 @import 'base/0.footer'
 
@@ -62,6 +69,8 @@
 		font-size: 20px
 	.container
 		width 1400px
+	.contact.contact-skype
+		margin 0 40px
 @media screen and (max-width 991px)
 	header
 		margin-bottom: 0
@@ -74,6 +83,12 @@
 		float: none
 		display block
 		margin 0 auto
+	.contacts
+		line-height: 1
+		text-align center
+		float none
+	.contact
+		display inline-block
 	.circles
 		max-width 345px
 	.circle
@@ -86,6 +101,8 @@
 		&:before
 			// top 0
 			left -100px
+	.contact
+		font-size: 14px
 	.main-title
 		font-size: 24px
 		margin-bottom: 0
